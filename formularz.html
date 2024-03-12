@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="PL">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moja pierwsza strona</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/article.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="js/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <article class="article">
+        <H1 class="article__header">Lorem ipsum</H1>
+        <p class="article__paragraph">dolor sit amet consectetur adipisicing elit. Repellat corporis sint rerum modi
+            aliquam?
+            Asperiores, sed amet saepe deleniti qui perspiciatis nam corporis odit reiciendis in, esse consequuntur
+            totam
+            possimus!</p>
+        <p class="article__paragraph article__paragraph--highlighted">Lorem ipsum dolor sit, amet consectetur
+            adipisicing elit. Eos explicabo ea consectetur ipsa qui itaque veniam rem
+            numquam aliquid optio non eligendi hic porro est maxime veritatis, illum eveniet pariatur?</p>
+    </article>
+    <article class="article article--dark">
+        <h2 class="article__header "> Ipsum </h2>
+        <p class="article__paragraph"> sit amet consectetur adipisicing elit. Quaerat id quam alias recusandae quisquam
+            doloribus
+            cumque reiciendis explicabo quod labore, assumenda sequi eligendi amet similique provident repudiandae
+            adipisci
+            ad
+            nam.</p>
+        <p class="article__paragraph article__paragraph--highlighted">Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Tenetur id ex eveniet non quidem totam ab a enim iusto,
+            porro earum voluptas, iste atque quaerat architecto eum, quas culpa maxime?</P>
+    </article>
+
+    <div class="article">
+        <form class="form" action="https://postman-echo.com/post" method="post" enctype="multipart/form-data">
+
+
+            <fieldset class="form__fieldset">
+                <legend class="form__legend">Dane osobowe</legend>
+                <p>
+                    <label>
+                        <spam class="form__labelText"> Imie* :</spam>
+                        <input class="form__field" class="form__field" name="name" placeholder="Jan" autofocus required>
+
+
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <spam class="form__labelText"> Nazwisko* :</spam>
+                        <input class="form__field" class="form__field" name="name" placeholder="Kowalski" autofocus
+                            required>
+                    </label>
+                </p>
+
+                <P>
+                    <label>
+                        <spam class="form__labelText"> Opis :</spam>
+
+                        <textarea class="form__field form__text" name="description" rows="6" cols="30"
+                            placeholder="napisz cos o sobie..."></textarea>
+                    </label>
+                </P>
+                <p>
+                    <label>
+                        <spam class="form__labelText"> Kod pocztowy* :</spam>
+                        <input class="form__field" class="form__field" name="name" pattern="[0-9]{2}-[0-9]{3}"
+                            placeholder="41-819" required>
+                    </label>
+                </p>
+
+                Pola wymagane oznaczone są *
+            </fieldset>
+            </p>
+            <p>
+
+                <button class="form__button">Wyślij!</button>
+
+            </p>
+        </form>
+
+    </div>
+    <div class="article">
+        <form>
+
+            <fieldset class="form__fieldset">
+                <legend class="form__legend">Ulubieni Wykonawcy</legend>
+                <ul>
+                    <li>
+                        <Label>
+                            <input class="form__field" type="checkbox" name="Sanach" checked>Sanach
+                        </Label>
+
+                    </li>
+                    <li>
+                        <Label>
+                            <input class="form__field" type="checkbox" name="Eftis">Eftis
+                        </Label>
+
+                    </li>
+
+
+                    <li>
+                        <Label>
+                            <input class="form__field" type="checkbox" name="SDM" checked>SDM
+                        </Label>
+
+                    </li>
+                </ul>
+
+            </fieldset>
+
+            <button class="form__button"> wyślij</button>
+        </form>
+
+    </div>
+    <div class="article">
+        <form>
+
+            <fieldset class="form__fieldset">
+                <legend class="form__legend">Ulubieni Wykonawcy</legend>
+                <ul>
+                    <li>
+                        <Label>
+                            <input class="form__field" type="radio" name="favouriteSinger" value="Sanach">Sanach
+                        </Label>
+
+                    </li>
+                    <li>
+                        <Label>
+                            <input class="form__field" type="radio" name="favouriteSinger" value="Eftis">Eftis
+                        </Label>
+
+                    </li>
+
+
+                    <li>
+                        <Label>
+                            <input class="form__field" type="radio" name="favouriteSinger" value="SDM">SDM
+                        </Label>
+
+                    </li>
+                </ul>
+
+            </fieldset>
+
+            <button class="form__button"> wyślij</button>
+        </form>
+
+    </div>
+    <div class="article">
+        <form>
+
+            <fieldset class="form__fieldset">
+                <legend class="form__legend">Ulubieni Wykonawcy</legend>
+                <select name="favouriteSinger">
+                    <option value="Sanach">Sanach</option>
+                    <option value="Eftis">Eftis</option>
+                    <option value="SDM">SDM</option>
+                </select>
+
+            </fieldset>
+
+            <button class="form__button"> wyślij</button>
+        </form>
+
+    </div>
+    <div class="article">
+        <form>
+
+            <label> Dodaj plik CV
+                <input class="form__field" type="file" name="cv">
+            </label>
+
+            <button class="form__button"> wyślij</button>
+        </form>
+
+    </div>
+    <div class="article">
+        <form>
+
+            <label> adres email
+                <input class="form__field" type="email" name="email">
+            </label>
+
+            <button class="form__button"> wyślij</button>
+        </form>
+
+    </div>
+    <div class="article">
+        <form>
+
+            <label> podaj hasło
+                <input class="form__field" type="password" name="password">
+            </label>
+
+            <button class="form__button"> wyślij</button>
+        </form>
+
+    </div>
+
+    <div class="article">
+        <form>
+
+            <label> podaj wzrost
+                <input class="form__field" type="number" name="height" step="00.2" min="120" max="210">
+            </label>
+
+            <button class="form__button"> wyślij</button>
+        </form>
+
+    </div>
+    <div class="article">
+        <form>
+
+            <label> podaj cene
+                <input class="form__field" type="range" name="maxPrince" step="2" min="1200" max="2100">
+            </label>
+
+            <button class="form__button"> wyślij</button>
+        </form>
+
+    </div>
+    <div class="article">
+        <form>
+
+            <label> marka samochodu
+                <input class="form__field" name="carBrand" list="carBrands">
+                <datalist id="carBrands">
+                    <option>Audi</option>
+                    <option>Mercedes</option>
+                    <option>Skoda</option>
+                    <option>Dacia</option>
+                    <option>Skania</option>
+                    <option>Honda</option>
+
+                </datalist>
+            </label>
+
+            <button class="form__button"> wyślij</button>
+        </form>
+
+    </div>
+    <div class="article">
+        <form>
+
+            <label> dodaj kolor
+                <input class="form__field" type="color" name="color">
+            </label>
+
+            <button class="form__button"> wyślij</button>
+        </form>
+
+    </div>
+    <div class="article">
+        <form>
+
+            <label> wybierz date
+                <input class="form__field" type="date" name="date">
+                <input class="form__field" type="datetime-local" name="datetime-local">
+                <input class="form__field" type="dateAndtime" name="dateAndtime">
+                <input class="form__field" type="time" name="time">
+                <input class="form__field" type="week" name="week">
+                <input class="form__field" type="month" name="month">
+            </label>
+
+            <button class="form__button"> wyślij</button>
+            <p><button class="form__button" tape="reset"> kasuj wszystko !!!</button></p>
+        </form>
+
+    </div>
+    <div class="article">
+        <form action="https://www.google.com/search">
+
+            <label> szukaj google
+                <input class="form__field" name="q" a>
+            </label>
+
+            <button class="form__button"> szukaj</button>
+        </form>
+
+    </div>
+
+    <div class="article">
+        <form class="js-Form">
+            <fieldset class="form__fieldset">
+                <legend class="form__legend">BMI</legend>
+
+                <p>
+                    <label>Twój wzrost
+                        <input class="js-Height" required type="numbet" name="height">
+                    </label>
+                </p>
+                <p>
+                    <label>Twoja waga
+                        <input class="js-Weight" required type="number" name="Weight">
+                    </label>
+                </p>
+            </fieldset>
+
+
+            <button class="form__button" > wyślij</button>
+            <p>wynik <strong class="js-Bmi">
+                N/a
+            </strong>
+
+            </p>
+
+        </form>
+
+</body>
+
+
+
+</html>

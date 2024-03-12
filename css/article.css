@@ -1,0 +1,28 @@
+.article 
+{
+ max-width: 600px;
+padding: 10px ;
+box-shadow: 2px 2px 10px #8ab9da;
+margin: 29px ;
+border-radius: 5px ;
+
+}
+.article__header
+{
+color: teal
+
+
+}
+
+.article--dark
+{
+    background-color: rgb(32, 32, 44);
+}
+.article__paragraph
+{
+    color: rgba(62, 232, 175, 0.552);
+}
+.article__paragraph--highlighted
+{
+    color: rgb(171, 108, 230);
+}
