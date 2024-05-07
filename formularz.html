@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moja pierwsza strona</title>
+    <title>Moje formularze</title>
+    <meta property="og.image" content="images/widok.jpg">
+    <link rel="icon" href="images/ikonka2.jpeg">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/article.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -19,7 +21,7 @@
 
 </head>
 
-<body>
+<body class="element">
     <article class="article">
         <H1 class="article__header">Lorem ipsum</H1>
         <p class="article__paragraph">dolor sit amet consectetur adipisicing elit. Repellat corporis sint rerum modi
@@ -301,25 +303,32 @@
 
                 <p>
                     <label>Twój wzrost
-                        <input class="js-Height" required type="numbet" name="height">
+                        <input class="js-Height" placeholder="cm" required type="number" name="height" min="30">
                     </label>
                 </p>
                 <p>
                     <label>Twoja waga
-                        <input class="js-Weight" required type="number" name="Weight">
+                        <input class="js-Weight" placeholder="kg" required type="number" name="Weight" min="4">
                     </label>
                 </p>
             </fieldset>
 
 
-            <button class="form__button" > wyślij</button>
+            <button class="form__button"> policz</button>
             <p>wynik <strong class="js-Bmi">
-                N/a
-            </strong>
+                    N/a
+                </strong>
+
 
             </p>
 
+
         </form>
+
+    </div>
+
+
+   
 
 </body>
 

@@ -61,3 +61,10 @@ color: white;
  min-height: 60px;
     resize: vertical;
 }
+ /*.element {
+    background-image: url(
+        "../images/widok.jpg"
+    ) ;
+   background-repeat :no-repeat round
+
+}
